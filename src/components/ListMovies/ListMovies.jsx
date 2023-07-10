@@ -1,7 +1,10 @@
+import Movie from "../Movie/Movie"
+
 const ListMovies = () => {
-  return (
+    
+    return (
     <div>
-      
+      <Movie/>
     </div>
   )
 }

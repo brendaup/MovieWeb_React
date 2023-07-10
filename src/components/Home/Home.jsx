@@ -1,9 +1,15 @@
-const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import BillBoardsList from "../BillBoards/BillBoardsList";
 
-export default Home
+const Home = ({ movieUpComing }) => {
+  const renderMovies = movieUpComing.map((movie) => {
+    return (
+      <div key={movie.id}>
+        <BillBoardsList movie={movie} />
+      </div>
+    );
+  });
+
+  return <div>{renderMovies}</div>;
+};
+
+export default Home;

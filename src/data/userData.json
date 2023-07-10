@@ -1,0 +1,38 @@
+[
+    {
+        "alias": "Belen",
+        "email": "belen@upgrade.com",
+        "password": "123456",
+        "name": "Belen"
+    },
+    {
+        "alias": "Ana",
+        "email": "ana@upgrade.com",
+        "password": "123456",
+        "name": "Anabel"
+    },
+    {
+        "alias": "Mario",
+        "email": "mario@upgrade.com",
+        "password": "123456",
+        "name": "Mario"
+    },
+    {
+        "alias": "Fran",
+        "email": "fran@upgrade.com",
+        "password": "123456",
+        "name": "Francisco"
+    },
+    {
+        "alias": "Lidia",
+        "email": "lidia@upgrade.com",
+        "password": "123456",
+        "name": "Lidia"
+    },
+    {
+        "alias": "Carlos",
+        "email": "carlos@upgrade.com",
+        "password": "123456",
+        "name": "Carlos"
+    }
+]
