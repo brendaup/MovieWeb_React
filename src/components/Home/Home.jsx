@@ -1,15 +1,8 @@
 import BillBoardsList from "../BillBoards/BillBoardsList";
 
-const Home = ({ movieUpComing }) => {
-  const renderMovies = movieUpComing.map((movie) => {
-    return (
-      <div key={movie.id}>
-        <BillBoardsList movie={movie} />
-      </div>
-    );
-  });
+const Home = () => {
 
-  return <div>{renderMovies}</div>;
+  return <div>HOLA ESTA ES LA HOME</div>;
 };
 
 export default Home;

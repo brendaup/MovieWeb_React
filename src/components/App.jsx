@@ -49,7 +49,7 @@ function App() {
         
           <Nav />
           <Routes>
-            <Route path="/" element={<Home movieUpComing={movieUpComing}/>}>Home</Route>
+            <Route path="/" element={<Home />}>Home</Route>
             <Route path="/listMovies" element={<ListMovies />}>Popular Movies</Route>
             <Route path="/billBoardsList" element={<BillBoardsList movie={movieUpComing} />} />
             <Route path="/login" element={<Login loginUser={loginUser} />} />
