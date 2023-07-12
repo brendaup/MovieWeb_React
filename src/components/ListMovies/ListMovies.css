@@ -1,0 +1,24 @@
+/* 
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+} */

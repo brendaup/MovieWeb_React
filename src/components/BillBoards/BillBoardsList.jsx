@@ -4,21 +4,17 @@ import "./BillBoardsList.css"
 
 const BillBoardsList = ({movie}) => {
 
-    const renderListMovie = movie.map((mov)=>{
-        return(
-            <div className='movie-card' key={mov.id}>
-                <div>
+return (
+    
+        <div className='container-list'>
+            {movie.map((mov)=>(
+                <div className='movie' key={mov.id}>
                     <BillBoardsMovie movieBillBoard={mov}/>
                 </div>
-            </div>
-        )
-    })
-
-    return (
-    <div>
-      {renderListMovie}
-    </div>
-  )
+            ))}
+        </div>
+    
+)
 }
 
 export default BillBoardsList

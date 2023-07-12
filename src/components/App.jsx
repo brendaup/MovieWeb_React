@@ -1,4 +1,5 @@
 import "../styles/App.css";
+import React from "react";
 import { Routes, Route, useNavigate} from "react-router-dom";
 import Nav from "./Nav/Nav";
 import Home from "./Home/Home";
@@ -12,6 +13,7 @@ import AuthRoute from "./AuthRoute/AuthRoute";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BillBoardsList from "./BillBoards/BillBoardsList";
+
 
 
 function App() {
