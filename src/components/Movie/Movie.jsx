@@ -7,8 +7,8 @@ const getPosterUrl = (posterPath) =>{
 }
 
 const Movie = () => {
+  
   const {movies} = useContext(MovieContext)
-
 
     const renderMovie = movies.map((movie)=>{
         return(

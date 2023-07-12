@@ -11,6 +11,7 @@ import { UserContext, useUserContext } from "../context/UserContext";
 import AuthRoute from "./AuthRoute/AuthRoute";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import BillBoardsList from "./BillBoards/BillBoardsList";
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home movieUpComing={movieUpComing}/>}>Home</Route>
             <Route path="/listMovies" element={<ListMovies />}>Popular Movies</Route>
+            <Route path="/billBoardsList" element={<BillBoardsList movie={movieUpComing} />} />
             <Route path="/login" element={<Login loginUser={loginUser} />} />
             <Route path="/profile" element={<AuthRoute component={<Profile />} />} />
           </Routes>

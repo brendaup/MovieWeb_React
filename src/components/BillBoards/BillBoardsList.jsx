@@ -1,16 +1,24 @@
+import React from 'react'
+import BillBoardsMovie from './BillBoardsMovie'
 import "./BillBoardsList.css"
 
-const getPosterUrl = (posterPath) =>{
-    return `https://image.tmdb.org/t/p/original${posterPath}`
-}
 const BillBoardsList = ({movie}) => {
 
+    const renderListMovie = movie.map((mov)=>{
+        return(
+            <div className='movie-card' key={mov.id}>
+                <div>
+                    <BillBoardsMovie movieBillBoard={mov}/>
+                </div>
+            </div>
+        )
+    })
+
     return (
-        <div  className="billboards-card">
-        <h1>{movie.title}</h1>
-        <img src={getPosterUrl(movie.poster_path)} alt={movie.original_title} />
+    <div>
+      {renderListMovie}
     </div>
-    )
-  }
+  )
+}
 
 export default BillBoardsList
