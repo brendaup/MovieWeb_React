@@ -1,24 +1,27 @@
-/* 
-.movie-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+.container-list {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
 }
 
-.movie-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
+.container-list .movie {
+  flex: 0 0 20%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px; 
+  margin-left: 20px; 
 }
 
-.movie-title {
+.container-list .movie h1 {
+  color: #fff;
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.movie-image {
+.container-list .movie img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
-} */
+  max-height: 300px; 
+  object-fit: contain;
+}
+ 

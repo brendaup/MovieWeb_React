@@ -13,6 +13,7 @@ import AuthRoute from "./AuthRoute/AuthRoute";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BillBoardsList from "./BillBoards/BillBoardsList";
+import DetailCard from "./DetailCard/DetailCard";
 
 
 
@@ -53,6 +54,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}>Home</Route>
             <Route path="/listMovies" element={<ListMovies />}>Popular Movies</Route>
+            <Route path="/detail/:id" element={<DetailCard />}/>
             <Route path="/billBoardsList" element={<BillBoardsList movie={movieUpComing} />} />
             <Route path="/login" element={<Login loginUser={loginUser} />} />
             <Route path="/profile" element={<AuthRoute component={<Profile />} />} />

@@ -1,24 +1,16 @@
 import { useContext } from "react"
 import { MovieContext } from "../../context/Apis"
 import FormSearch from "../Form/FormSearch"
-import Movie from "../Movie/Movie"
+import "./ListMovies.css"
+
 
 const ListMovies = () => {
-    
-   const {movies} = useContext(MovieContext) 
 
-/*   const renderListMovie = movies.map((movie)=>{
-    return(
-      <div className="movie-card" key={movie.id}>
-        <div>
-          <Movie movie={movie}/>
-        </div>
-      </div>
-    )
-  }) */
+  const { movies } = useContext(MovieContext);
 
     return (
-    <div className="container">
+    <div className="container-movie">
+      
       <FormSearch movies={movies}/>
      
     </div>

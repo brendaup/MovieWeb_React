@@ -1,20 +1,19 @@
 import { useContext, useState } from "react";
 import { MovieContext } from "../../context/Apis";
+import { Link } from "react-router-dom"
+import "./FormSearch.css";
 
-const FormSearch = () => {
+const FormSearch = ({ movies }) => {
   const getPosterUrl = (posterPath) => {
     return `https://image.tmdb.org/t/p/original${posterPath}`;
   };
 
   const [movieSearch, setMovieSearch] = useState("");
-  const { movies } = useContext(MovieContext);
+/*   const { movies } = useContext(MovieContext); */
 
   const handleChange = (ev) => {
+    ev.preventDefault()
     setMovieSearch(ev.target.value);
-  };
-
-  const handleSearch = (ev) => {
-    ev.preventDefault();
   };
 
   const filteredMovies = movies.filter((movie) =>
@@ -22,41 +21,26 @@ const FormSearch = () => {
   );
 
   return (
-    <div>
-      <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          placeholder="Enter title"
-          value={movieSearch}
-          onChange={handleChange}
-        />
-        <button type="submit">Search</button>
-      </form>
-      {filteredMovies.length > 0 ? (
-        filteredMovies.map((movie) => (
-          <div key={movie.id}>
+    <div className="container-form-search">
+      <div className="container-form">
+        <form className="form-search">
+          <input
+            type="text"
+            placeholder="Enter title"
+            value={movieSearch}
+            onChange={handleChange}
+          />
+        </form>
+      </div>
+      <div className="search-results">
+        {filteredMovies.map((movie) => (
+          <div className="result-item-filtered" key={movie.id}>
             <h3>{movie.title}</h3>
-            <img
-              src={getPosterUrl(movie.poster_path)}
-              alt={movie.original_title}
-            />
+           <Link to={`/detail/${movie.id}`}> <img src={getPosterUrl(movie.poster_path)} alt={movie.title} /></Link>
           </div>
-        ))
-      ) : (
-        <div>
-          {movies.map((movie) => (
-            <div key={movie.id}>
-              <h3>{movie.title}</h3>
-              <img
-                src={getPosterUrl(movie.poster_path)}
-                alt={movie.original_title}
-              />
-            </div>
-          ))}
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   );
 };
-
 export default FormSearch;

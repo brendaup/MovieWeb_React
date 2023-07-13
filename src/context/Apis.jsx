@@ -15,7 +15,8 @@ export const MovieContextProvider = ({ children }) => {
   useEffect(() => {
     const getMovies = async () => {
        await axios.get(`${BASE_URL}/discover/movie?api_key=${API_KEY}`).then((info)=> 
-       setMovies(info.data.results)           
+        setMovies(info.data.results)       
+            
        )
     }
     getMovies()
