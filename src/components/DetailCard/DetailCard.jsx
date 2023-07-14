@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { MovieContext } from "../../context/Apis";
 import { useParams } from "react-router-dom";
+import "./DetailCard.css"
 
 const DetailCard = () => {
 
@@ -17,21 +18,22 @@ const DetailCard = () => {
 
     if(findMovies){
        return (
-        <div>
-          <h2>{findMovies.title}</h2>
-          <img src={getPosterUrl(findMovies.poster_path)} alt={findMovies.title} />
-          <p>{findMovies.overview}</p>
+        <div className="container-detail-card">
+          <div className="detail-card">
+            <h2>{findMovies.title}</h2>
+            <img src={getPosterUrl(findMovies.poster_path)} alt={findMovies.title} />
+            <p>{findMovies.overview}</p>
+          </div>
         </div>
       ); 
     } else {
         return(
-            <p>no encontrado</p>
+            <div className="not-found">
+              <img src="https://img.freepik.com/vector-premium/icono-error-minimo-moderno-no-encontrado-vaya-pagina-no-encontrada-404-error-pagina-no-encontrada-concept_599740-716.jpg" alt="not-found" />  
+            </div>
+            
         )
     }
-
-    
-
-
 }
 
 export default DetailCard

@@ -2,7 +2,7 @@
     background-color: #000;
     height: 60px;
     display: flex;
-    justify-content: space-around;;
+    justify-content: center;
     align-items: center;
   }
   
@@ -11,6 +11,8 @@
     display: flex;
     padding: 0;
     margin: 0;
+    justify-content: space-around; /* Cambio: Centra los elementos horizontalmente */
+    width: 100%;
   }
   
   .nav-item {
@@ -25,6 +27,6 @@
   }
   
   .nav-link:hover {
-    color: #ff0000;
+    color: #ff0000 !important;
   }
   

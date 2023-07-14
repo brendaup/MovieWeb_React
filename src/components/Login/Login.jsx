@@ -1,5 +1,6 @@
 import { useState, useContext } from "react"
 import { UserContext } from "../../context/UserContext"
+import "./Login.css"
 
 const initial_state = {
   alias: "",

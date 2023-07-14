@@ -12,7 +12,6 @@ const FormSearch = ({ movies }) => {
 /*   const { movies } = useContext(MovieContext); */
 
   const handleChange = (ev) => {
-    ev.preventDefault()
     setMovieSearch(ev.target.value);
   };
 
