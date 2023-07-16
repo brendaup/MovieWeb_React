@@ -14,7 +14,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import BillBoardsList from "./BillBoards/BillBoardsList";
 import DetailCard from "./DetailCard/DetailCard";
-
+import Footer from "./Footer/Footer";
+import NotFound from "./NotFound/NotFound";
 
 
 function App() {
@@ -58,7 +59,10 @@ function App() {
             <Route path="/billBoardsList" element={<BillBoardsList movie={movieUpComing} />} />
             <Route path="/login" element={<Login loginUser={loginUser} />} />
             <Route path="/profile" element={<AuthRoute component={<Profile />} />} />
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
+
+           <Footer/> 
        
       </MovieContextProvider>
        </UserContext.Provider>

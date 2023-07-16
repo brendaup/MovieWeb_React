@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { MovieContext } from "../../context/Apis";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./FormSearch.css";
 
 const FormSearch = ({ movies }) => {
@@ -9,7 +9,7 @@ const FormSearch = ({ movies }) => {
   };
 
   const [movieSearch, setMovieSearch] = useState("");
-/*   const { movies } = useContext(MovieContext); */
+  /*   const { movies } = useContext(MovieContext); */
 
   const handleChange = (ev) => {
     setMovieSearch(ev.target.value);
@@ -35,7 +35,10 @@ const FormSearch = ({ movies }) => {
         {filteredMovies.map((movie) => (
           <div className="result-item-filtered" key={movie.id}>
             <h3>{movie.title}</h3>
-           <Link to={`/detail/${movie.id}`}> <img src={getPosterUrl(movie.poster_path)} alt={movie.title} /></Link>
+            <Link to={`/detail/${movie.id}`}>
+              {" "}
+              <img src={getPosterUrl(movie.poster_path)} alt={movie.title} />
+            </Link>
           </div>
         ))}
       </div>

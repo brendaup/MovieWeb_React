@@ -28,13 +28,6 @@ const Login = ({loginUser}) => {
         <h2>Log in to Your Account</h2>
         <form onSubmit={(ev) => ev.preventDefault()}>
           <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input
-              type="text"
-              id="username"
-              value={userData.alias}
-              onChange={handleChange}
-            />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>

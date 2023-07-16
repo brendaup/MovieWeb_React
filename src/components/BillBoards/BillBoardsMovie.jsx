@@ -1,5 +1,3 @@
-import "./BillBoardsList.css";
-
 const getPosterUrl = (posterPath) => {
   return `https://image.tmdb.org/t/p/original${posterPath}`;
 };
