@@ -28,10 +28,10 @@ const Login = ({loginUser}) => {
         <h2>Log in to Your Account</h2>
         <form onSubmit={(ev) => ev.preventDefault()}>
           <div className="form-group">
-            <label htmlFor="alias">Alias:</label>
+            <label htmlFor="username">Username:</label>
             <input
               type="text"
-              id="alias"
+              id="username"
               value={userData.alias}
               onChange={handleChange}
             />

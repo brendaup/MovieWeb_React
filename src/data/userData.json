@@ -1,38 +1,44 @@
 [
     {
-        "alias": "Belen",
+        "username": "BelenUp",
         "email": "belen@upgrade.com",
         "password": "123456",
-        "name": "Belen"
+        "name": "Belen",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     },
     {
-        "alias": "Ana",
+        "username": "AnaRa",
         "email": "ana@upgrade.com",
         "password": "123456",
-        "name": "Anabel"
+        "name": "Anabel",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     },
     {
-        "alias": "Mario",
+        "username": "Mario-Gonza",
         "email": "mario@upgrade.com",
         "password": "123456",
-        "name": "Mario"
+        "name": "Mario",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     },
     {
-        "alias": "Fran",
+        "username": "Fran_wini",
         "email": "fran@upgrade.com",
         "password": "123456",
-        "name": "Francisco"
+        "name": "Francisco",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     },
     {
-        "alias": "Lidia",
+        "username": "Lidia_2000",
         "email": "lidia@upgrade.com",
         "password": "123456",
-        "name": "Lidia"
+        "name": "Lidia",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     },
     {
-        "alias": "Carlos",
+        "username": "Carlos12",
         "email": "carlos@upgrade.com",
         "password": "123456",
-        "name": "Carlos"
+        "name": "Carlos",
+        "avatar": "https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"
     }
 ]

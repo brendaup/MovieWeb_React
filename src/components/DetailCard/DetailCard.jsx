@@ -22,7 +22,8 @@ const DetailCard = () => {
           <div className="detail-card">
             <h2>{findMovies.title}</h2>
             <img src={getPosterUrl(findMovies.poster_path)} alt={findMovies.title} />
-            <p>{findMovies.overview}</p>
+           <p>{findMovies.overview}</p> 
+           <p>{findMovies.vote_average}</p> 
           </div>
         </div>
       ); 
