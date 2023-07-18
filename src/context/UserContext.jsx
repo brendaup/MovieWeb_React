@@ -4,15 +4,11 @@ export const UserContext = createContext()
 
 export const useUserContext = () =>{
     const [state, setState] = useState({
-        user: null /* {
-            alias: "",
-            email:"", 
-            password: "",
-        },  */
+        user: null 
     })
 
     const addUser = (newUser) =>{
-        /* setState({...state, user: [...state.user, newUser]}) */
+
         setState({ ...state, user: newUser });
 
     }
