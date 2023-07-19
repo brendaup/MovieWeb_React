@@ -11,10 +11,10 @@ const DetailCard = () => {
 
   const { movies } = useContext(MovieContext);
   const { id } = useParams();
-  console.log(useParams);
+
 
   const findMovies = movies.find((movie) => movie.id === parseInt(id));
-  console.log(findMovies);
+
 
   if (findMovies) {
     return (
